@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container{
+            display: grid;
+           /*grid-template-columns: 300px 100px 100px; */ /*columns width*/
+
+         /* grid-template-columns: 300px auto 100px; */
+
+         grid-template-columns: 1fr 4fr 1fr;
+        /* we can give column width in fr also.here screen is divided into 1:4:1 part where
+          first column has 1fr part,second column has 4fr part,3rd column has 1fr part  */
+
+          /* if we want many columns  */
+          /* grid-template-columns: repeat(10,auto); */
+          grid-template-columns: repeat(3,auto);
+
+          grid-gap: 2rem;
+          /* it sets the gap between items  */
+
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: red;
+            border: 2px solid black;
+            padding: 15px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+         <div class="item">This is Item-9</div>
+         <div class="item">This is Item-9</div>
+         <div class="item">This is Item-9</div>
+         <div class="item">This is Item-9</div>
+    </div>
+    <!-- here by using property "display:grid;" container becomes grid and all childs inside container(Item-1 to Item-9) becomes grid items.
+     Grid is same as flex but the difference is grid is used for 2-dimentional layouts. -->
+</body>
+</html>

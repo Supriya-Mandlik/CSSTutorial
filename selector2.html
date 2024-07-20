@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <style>
+        /* 1> Tag/Element selector  */
+        p {
+            color: red;
+            border: 1px solid red;
+        }
+
+        /* here all p tags have this property in entire file  */
+
+        /* 2> id selector  */
+        #blueelement {
+            color: blue;
+        }
+
+        /* here id is unique.This property is applicable to the tag which has this id.  */
+
+        /* 3> class selector  */
+        .newclass {
+            color: tomato;
+        }
+
+        .bgyello{
+            background-color: yellow;
+        }
+
+        /* here we can give same class name for multiple elements.This property is applicable to the elements which has this class name  */
+
+     /* 4> grouping selector  */
+     span,footer{
+        background-color: hotpink;
+     }
+     /* here we can apply same property to multiple tags means group of tags  */
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+    <p>This is a simple paragraph to demonstrate css selectors</p>
+    <p>This is a another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        <span>This is span</span>
+    </div>
+
+    <p id="blueelement">This is a simple new paragraph to demonstrate css id selectors </p>
+
+    <p id="second" class="newclass bgyello">paragraph for class selector </p>
+    <p class="newclass">paragraph for class selector </p>
+    <p class="newclass bgyello">paragraph for class selector </p>
+    <!-- we can give two classes for one element also  -->
+  <footer>This is footer</footer>
+
+</body>
+
+</html>

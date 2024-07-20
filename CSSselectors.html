@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+ h1{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    /* all p tag inside div tag gets affected by this  */
+    /* div p{
+        color: red;
+        background-color: yellow;
+        font-weight: bold;
+    } */
+
+   /* if p is contained by any li which is contained by div  */
+    /* only p tag inside li tag inside div gets affected  */
+    /* div li p{
+        color: black;
+        background-color: aqua;
+        font-weight: bold;
+    } */
+
+     /* if p is right inside div then this css will be applied */
+    /* for parent - child direct relationship */
+    /* in this direct child (p tag) of parent (div) gets affected only   */
+    /* div > p{
+        color: red;
+        background-color: yellow;
+        font-weight: bold;
+    } */
+
+    /* if p is right after div that is p is the next sibling of div */
+   /* it is applicable when p tag last sibling is div  */
+   /* div + p{
+    color: blue;
+    background-color: pink;
+   } */
+
+</style>
+<body>
+  <h1>This is more on selectors</h1>  
+  <div class="container">
+    <div class="row">
+        <ul>
+            <li class="item"><p>This is another paragraph inside li</p></li>
+            <li>This will not get affected</li>
+            <p>This is another para in ul</p>
+        </ul>
+        <p>This is a paragraph</p>
+    </div>
+    <p>This is another paragraph</p>
+  </div>
+  <p>This is outermost paragraph</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+     /* to create global variable we have to write this  */
+      :root{
+        --box-color:hotpink;
+        /* this is global variable , we can access it anywhere  */
+
+       --primary-color:blue;
+       --danger-color:red;
+       --maxw:333px;
+
+      }
+
+     .box{
+        /* to create variable we have to use --  */
+      /*  --box-color:violet; */ /*creating variable*/
+        /* we can not access this variable outside the box means it is local variable  */
+        width: 200px;
+        height: 200px;
+        background-color: var(--primary-color);   /*using variable*/
+        /* to use variable we have to use var()  */
+        border: 2px solid var(--danger-color);
+        box-shadow: 3px 3px var(--box-color);
+        margin: 2px 9px;
+     }
+     .container{
+      /*  --box-color:cyan; */
+      max-width: var(--maxw);
+      margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--box-color);
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

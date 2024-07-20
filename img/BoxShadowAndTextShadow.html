@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        margin: 23px 12px;
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: aliceblue;
+
+        /* box-shadow: 10px 13px green;  */
+        /* box-shadow:x-offset y-offset color  */
+        /* box-shadow: -10px -13px green; */
+        /* if we want box shadow on upper side then use negative numbers and if we want box shadow on lower side then use positive numbers  */
+        
+        /* blur radius  */
+         /* box-shadow:x-offset y-offset blur-radius color  */
+        /* box-shadow: 7px 5px 10px green; */
+        /* box-shadow: -7px -5px 10px green; */
+
+        /* spread-radius */
+        /* means radius how much we want to spread  */
+         /* box-shadow:x-offset y-offset blur-radius spread-radius color  */
+        /* box-shadow: 7px 5px 10px 34px green; */
+
+        /* rgba  */
+        /* box-shadow: 7px 5px 10px 34px rgba(97, 97, 217, 0.5); */
+        /* rgba(red, green, blue, alpha) where alpha takes responsibility of darkness  */
+
+        /* inset - is used for shadow inside box  */
+        /* box-shadow: inset 3px 5px green ; */
+
+        /* for multiple shadows  */
+        box-shadow: 13px 5px green , 4px 16px red;
+    }
+
+    .card h2{
+
+         /* text-shadow:x-offset y-offset color  */
+        /* text-shadow: 2px 2px red;
+        text-shadow: -2px -2px red; */
+
+        /* blur radius  */
+         /* text-shadow:x-offset y-offset blur-radius color  */
+         text-shadow: 2px 2px 4px red;
+
+        }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ cource</h2>
+            <p>I have started c++ cource which does not mean that we stop this cource.we will continue this cource to completion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi tenetur eaque voluptatibus?
+                Numquam officia dolorem, accusantium hic nam labore ipsam aperiam nemo dolor, aliquid id delectus
+                doloremque. Maxime eos explicabo esse dolores quae!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML cource</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi tenetur eaque voluptatibus?
+                Numquam officia dolorem, accusantium hic nam labore ipsam aperiam nemo dolor, aliquid id delectus
+                doloremque. Maxime eos explicabo esse dolores quae!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi tenetur eaque voluptatibus?
+                Numquam officia dolorem, accusantium hic nam labore ipsam aperiam nemo dolor, aliquid id delectus
+                doloremque. Maxime eos explicabo esse dolores quae!</p>
+        </div>
+    </div>
+</body>
+
+</html>

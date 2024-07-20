@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height , width of Borders and Backgrounds</title>
+    <style>
+        #firstpara {
+            background-color: red;
+            height: 100px;
+            /* it changes the height of background-color*/
+            width: 500px;
+            /* it changes the width of background-color*/
+            /* border-width: 4px;
+        border-style: solid;
+        border-color: green; */
+            border: 4px solid green;
+            border-radius: 15px;
+        }
+
+        #secondpara {
+            background-color: cornflowerblue;
+            height: 100px;
+            width: 500px;
+            border-top: 5px solid violet;
+            border-bottom: 5px solid rgb(77, 8, 160);
+            border-left: 5px solid rgb(46, 221, 11);
+            border-right: 5px solid rgb(203, 42, 10);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #thirdpara{
+            height: 1000px;
+            width: 1100px;
+            background-image:url('https://breathedreamgo.com/wp-content/uploads/2023/07/iStock-1438577689-Jati-Lewis-RIce-Terrace-Bali-Indonesia.jpg') ;
+            /* for url -> search on google -> click on image -> open image in new tab -> copy image address */
+            border: 2px solid red;
+            background-repeat: no-repeat;
+             /* repeat-x and repeat-y will make it repeat on x and y axis*/
+             /* background-position: center; */
+             /* background-position: center top; */
+             /* background-position: center bottom; */
+             /* background-position: top top; */
+             /* background-position: bottom right; */
+             /* background-position: center right; */
+             /* background-position: center left; */
+             background-position: top right;
+             /* and many more combinations */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is heading</h3>
+    <p id="firstpara">This is a first paragraph</p>
+
+    <h3>This is heading</h3>
+    <p id="secondpara">This is a second paragraph</p>
+
+    <h3>This is heading</h3>
+    <p id="thirdpara">This is a third paragraph</p>
+
+</body>
+
+</html>
